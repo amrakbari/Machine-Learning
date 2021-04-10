@@ -8,6 +8,7 @@ X = dataset.iloc[:, 1:-1].values
 Y = dataset.iloc[:, -1].values
 
 regressor = DecisionTreeRegressor(random_state=0)
+
 regressor.fit(X, Y)
 pred = regressor.predict([[6.5]])
 print('Decision Tree Regression prediction of value 6.5')
